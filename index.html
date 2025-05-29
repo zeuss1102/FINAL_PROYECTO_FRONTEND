@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALLER MECANICO FINAL FRONTEND</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/movil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="wow.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@383&family=Poetsen+One&display=swap" rel="stylesheet">
+    <script src="carrousel.js"></script>
+    <link rel="stylesheet" href="CSS/carrousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</head>
+<body>
+    <a href="#inicio" class="btn_subir"><i class="fa-solid fa-arrow-up"></i></a>
+    <div id="inicio"></div>
+    <header class=" contenedor_menu contenedor_nav">
+        <figure class="contenedor_logo animate__animated animate__backInRight">
+            <a href="#inicio"><img src="IMAGENES/logo_serviciosJP.svg" alt=""></a>
+        </figure>
+        <nav>
+            <i id="icono_menu" class=" fa-solid fa-bars"></i>
+            <ul id="contenedor_menu">
+                <li><a href="#nosotros" class="btn_ancla">NOSOTROS</a></li>
+                <li><a href="#servicios" class="btn_ancla">SERVICIOS</a></li>
+                <li><a href="#mecanicos" class="btn_ancla">MECANICOS</a></li>
+                <li><a href="#recomendaciones" class="btn_ancla">RECOMENDACIONES</a></li>
+                <li><a href="#nuestro_trabajo" class="btn_ancla">NUESTRO TRABAJO</a></li>
+          
+            </ul>
+        </nav>
+        <div class="iconos_redes">
+            <i class="fa-brands fa-whatsapp  animate__animated animate__backInRight"></i>
+            <p>+52-999-1558-439</p>
+        </div>
+    </header>
+    <section class="contenedor_slideinfo ">
+        <ul class="rslides" id="slider-control">
+            <li>
+                <img src="IMAGENES/slide_3.avif" alt="">
+                <div class="filtro">
+                    <div>
+                        <h2 class="wow animate__animated animate__flipInY">SOMOS TU MEJOR</h2>
+                        <h2 class="wow animate__animated animate__flipInY">OPCIÓN</h2>
+                        <p> ¡Pon tu auto en manos de expertos! 🔧 Tu seguridad y la de tu vehículo son nuestra prioridad...</p>
+                        <a class="btn open btn_slide" href="#">HAZ UNA CITA</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="IMAGENES/slide_2.jpg" alt="">
+                <div class="filtro">
+                    <div class="centrar">
+                        <h2 class="wow animate__animated animate__flipInY">SOLICITA TU DIAGNÓSTICO </h2>
+                        <h2 class="wow animate__animated animate__flipInY" >GRATIS!!</h2>
+                    </div>
+                </div>
+            </li>
+        </ul> 
+    </section>
+    <div id="modalCita" class="modal">
+        <div class="modal_contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Agenda tu cita</h2>
+            <form id="formCita">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+    
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+    
+                
+                <input type="submit" value="ENVIAR">
+            </form>
+        </div>
+    </div>
+   
+<br>
+<div class="encabezados">
+    <h2 id="nosotros" class="wow animate__animated animate__backInLeft">NOSOTROS</h2>
+    <div class="linea"></div>
+</div>
+    <section class="contenedor_nosotros ancho">
+        <ul  class="menutabs ancho">
+            <li><a href="#op1" id="btn1" >¿Quiénes somos?</a></li>
+            <li><a href="#op2"  >Misión Visión</a></li>
+            <li><a href="#op3"  >Compromiso con la calidad</a></li>
+        </ul>
+        <section id="contenedor_tabs" class="ancho">
+            <article id="op1">
+                <h2>¿Quiénes somos?</h2>
+                <p>"Somos un taller mecánico con más de 10 años de experiencia brindando soluciones automotrices. Nuestro equipo de expertos está comprometido con la seguridad, eficiencia y calidad en cada reparación. Desde mantenimiento hasta diagnóstico avanzado, estamos aquí para cuidar de tu vehículo como si fuera nuestro."</p>
+                <img class="wow animate__animated animate__backInUp"  src="IMAGENES/10-experiencia-1.png" alt="">
+            </article>
+            <article id="op2">
+                <h2>Misión Visión</h2>
+                <p>Misión: "Garantizar la mejor experiencia en mantenimiento automotriz, con tecnología avanzada y servicio personalizado."</p>
+                <p>Visión: "Ser el taller mecánico de referencia, destacando por calidad, honestidad y profesionalismo."</p>
+                <img class="wow animate__animated animate__backInUp"  src="IMAGENES/TAB2.svg" alt="">
+            </article>
+            <article id="op3">
+                <h2>Compromiso con la calidad</h2>
+                <p>"Trabajamos con herramientas de última tecnología, repuestos originales y mecánicos certificados, asegurando un servicio confiable. Cada reparación pasa por un estricto control de calidad para ofrecerte seguridad y confianza en la carretera."</p>
+                <img class="wow animate__animated animate__backInUp" src="IMAGENES/TAB3.svg" alt="">
+            </article>
+        </section>
+        <br><br>
+    </section>
+    <br>
+    <div class="encabezados">
+        <h2 id="servicios" class="wow animate__animated  animate__backInLeft">SERVICIOS</h2>
+        <div class="linea"></div>
+    </div>
+    <section class="parallax ancho">
+        <div class="contenido_parallax contenedor_video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gXvorcSIlqc?si=P2CXKsFLSGM7MNf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           
+        </div> 
+    </section>
+    <br>
+    <div class="encabezados">
+        <h2 id="mecanicos" class="wow animate__animated  animate__backInLeft">MECANICOS</h2>
+        <div class="linea"></div>
+    </div>
+
+    <section id="carousel" class="ancho contenedor_mecanicos">
+        <div class="titulo">
+            <h2 class="color wow animate__animated animate__fadeInRightBig">NUESTRO EQUIPO PROFESIONAL DE MECANICOS</h2>
+            <P class="color2">Conoce a nuestro equipo de expertos mecánicos, dedicados a brindar el mejor servicio y atención a tu vehículo. Cada uno de ellos cuenta con años de experiencia y formación especializada para garantizar que tu auto esté en las mejores manos. Desde diagnósticos precisos hasta reparaciones complejas, nuestro equipo está aquí para asegurarse de que tu vehículo funcione de manera óptima.</P>
+            </P>
+            <div class="slide-buttons">
+                <a href="#" id="back-button" class="arrow back"><i class="fa-solid fa-arrow-left"></i></a>
+                
+               <a href="#" id="forward-button" class="arrow forward"> <i class="fa-solid fa-arrow-right"></i></a>
+         </div>
+        </div>
+        <div id="slide-container">
+            
+    
+          
+    
+            <article class="slide" data-slideIndex="1">
+                <img src="IMAGENES/persona_1.avif" alt="">
+                <h2>RICARDO PUIGCERVER TRACONIS</h2>
+                <p>JEFE MECANICO</p>
+               
+                
+            </article>
+    
+           
+    
+            <article class="slide" data-slideIndex="1">
+                <img src="IMAGENES/persona_2.avif" alt="">
+                <h2>FRANK BUGER</h2>
+                <p>INGENIERO ELECTRICO AUTOMOTRIZ</p>
+             
+                
+            </article>
+    
+         
+    
+            <article class="slide" data-slideIndex="1">
+                <img src="IMAGENES/persona_3.avif" alt="">
+                <h2>OMAR ROMERO</h2>
+                <p>AYUDANTE DE MECANICO</p>
+               
+                
+            </article>
+            
+            <article class="slide" data-slideIndex="1">
+                <img src="IMAGENES/persona_4.jpg" alt="">
+                <h2>EDUARDO QUIJANO</h2>
+                <p>TECNICO EN PROGRAMACIÓN DE COMPUTADORAS AUTOMOTRIZ</p>
+             
+                
+            </article>
+            
+            <article class="slide" data-slideIndex="1">
+                <img src="IMAGENES/persona_5.avif" alt="">
+                <h2>JULIO CAMBRANIS</h2>
+                <p>INGENIERO AUTOMOTRIZ Y DIESEL</p>
+               
+                
+            </article>
+        </div>
+    </section>
+    <br>
+    <div class="encabezados">
+        <h2 id="recomendaciones" class="wow animate__animated  animate__backInLeft">RECOMENDACIONES</h2>
+        <div class="linea"></div>
+    </div>
+   <div>
+    <div class="acordeon ancho">
+        <div class="acordeon_titulo wow animate__animated wow animate__animated animate__slideInUp">
+            <h2>Revisión periódica de aceite y filtro</h2>
+            <i class="fa-regular fa-circle-up flecha"></i>
+        </div>
+        <article class="acordeon_contenido">
+            <p class="wow animate__animated animate__lightSpeedInRight">Mantén el motor en óptimas condiciones cambiando el aceite y los filtros de aire y combustible según el manual del fabricante.Beneficio: Prolonga la vida útil del motor y mejora el rendimiento.</p>
+            <p class="wow animate__animated animate__lightSpeedInRight">estos cambios se recomiendan dependiendo de la calidad del aceite , ya que un aceite sintetico de las marcas más reconocidas podria durar hasta los 10,000km dependiendo del uso</p>
+            <img src="IMAGENES/acordeon_1.webp" alt="">
+        </article>
+    </div>
+    <div class="acordeon ancho">
+        <div class="acordeon_titulo wow animate__animated wow animate__animated animate__slideInUp">
+            <h2>Inspección de frenos y neumáticos</h2>
+            <i class="fa-regular fa-circle-up flecha"></i>
+        </div>
+        <article class="acordeon_contenido">
+            <p class="wow animate__animated animate__lightSpeedInRight">Verifica la presión de los neumáticos regularmente y revisa el estado de las pastillas de freno para evitar desgaste excesivo. 
+                Beneficio: Mayor seguridad en la carretera y mejor eficiencia en el consumo de combustible.</p>
+                <img src="IMAGENES/acordeon_2.png" alt="">            
+        </article>
+    </div>
+    <div class="acordeon ancho">
+        <div class="acordeon_titulo wow animate__animated wow animate__animated animate__slideInUp">
+            <h2>Revisión del sistema eléctrico y batería</h2>
+            <i class="fa-regular fa-circle-up flecha"></i>
+        </div>
+        <article class="acordeon_contenido">
+        <p class="wow animate__animated animate__lightSpeedInRight">Comprueba el estado de la batería y luces para evitar fallos inesperados. Asegúrate de que el sistema de carga funciona correctamente.  Beneficio: Evita problemas de arranque y mejora la visibilidad en condiciones difíciles.</p>
+        </article>
+    </div>
+   </div>
+   <br>
+   <div class="encabezados">
+    <h2 id="nuestro_trabajo" class="wow animate__animated  animate__backInLeft">NUESTRO TRABAJO</h2>
+    <div class="linea"></div>
+    </div>
+    <article class="contenedor_galeria ancho">
+        <section class="galeria_grid">
+            <a href="IMAGENES/fanybox_1.webp" data-fancybox="gallery" data-caption="FOTO 1">
+                <figure>
+                    <img src="IMAGENES/fanybox_1.webp" alt="">
+                </figure>
+            </a>
+            <a href="IMAGENES/fancybox_2.jpeg" data-fancybox="gallery" data-caption="FOTO 2">
+                <figure>
+                    <img src="IMAGENES/fancybox_2.jpeg" alt="">
+                </figure>
+            </a>
+            <a href="IMAGENES/fancybox_3.jpg" data-fancybox="gallery" data-caption="FOTO 3">
+                <figure>
+                    <img src="IMAGENES/fancybox_3.jpg" alt="">
+                </figure>
+            </a>
+            <a href="IMAGENES/fancybox_4.webp" data-fancybox="gallery" data-caption="FOTO 4">
+                <figure>
+                    <img src="IMAGENES/fancybox_4.webp" alt="">
+                </figure>
+            </a>
+            <a href="IMAGENES/fancybox_4.webp" data-fancybox="gallery" data-caption="FOTO 4">
+                <figure>
+                    <img src="IMAGENES/fancybox_5.jpg" alt="">
+                </figure>
+            </a>
+            <a href="IMAGENES/fancybox_4.webp" data-fancybox="gallery" data-caption="FOTO 4">
+                <figure>
+                    <img src="IMAGENES/fancybox_6.webp" alt="">
+                </figure>
+            </a>
+        </section>
+    </article>
+    br
+    <footer >
+      <div>
+        <a class="btn open btn_slide " href="#">HAZ UNA CITA</a>
+      </div>
+      <div class="wow animate__animated animate__slideInUp">
+        <h3>contactanos</h3>
+        <ul>
+            <li>Numero de telefono: 9994558488</li>
+            <li>correo electronico: serviciosjp@gmail.com</li>
+            <li>Ubicacion: Calle 60 # 1234, Colonia Centro, Merida, Yucatan</li>
+            <li>Horario: Lunes a Viernes de 8:00 am a 6:00 pm</li>
+        </ul>
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119190.25266364832!2d-89.70182140273435!3d21.0048439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567938d7343a0f%3A0xcf9fcaf8e843f740!2sJP%20Servicio%20automotriz%20-%20Taller%20Chichi%20Su%C3%A1rez!5e0!3m2!1ses!2smx!4v1748475497966!5m2!1ses!2smx" width="400px" height="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+        <div class="iconos_redes wow animate__animated animate__slideInUp">
+            <a href="https://www.facebook.com/profile.php?id=100090222976852"><i class="fa-brands fa-facebook-f"></i></a>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.youtube.com/@ServiciosJP"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        
+    </footer>
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+  });
+      </script>
+   
+    <script>
+                $(".acordeon_titulo").click(function () {
+            var $contenido = $(this).next(".acordeon_contenido");
+            var $icono = $(this).find(".flecha");
+
+            if ($contenido.is(":visible")) {
+                $contenido.slideUp();
+                $icono.removeClass("rotarflecha");
+            } else {
+                $(".acordeon_contenido").slideUp();
+                $(".flecha").removeClass("rotarflecha");
+
+                $contenido.slideDown();
+                $icono.addClass("rotarflecha");
+            }
+        });
+       </script>
+      
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    const slideContainer = document.getElementById("slide-container");
+    const slides = document.querySelectorAll(".slide");
+    const backButton = document.getElementById("back-button");
+    const forwardButton = document.getElementById("forward-button");
+
+    let currentSlide = 0;
+
+    function updateCarousel() {
+        slideContainer.scrollLeft = currentSlide * slideContainer.clientWidth;
+    }
+
+    forwardButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        if (currentSlide < slides.length - 1) {
+            currentSlide++;
+        } else {
+            currentSlide = 0;
+        }
+        updateCarousel();
+    });
+
+    backButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        if (currentSlide > 0) {
+            currentSlide--;
+        } else {
+            currentSlide = slides.length - 1;
+        }
+        updateCarousel();
+    });
+});
+
+    </script>
+  
+
+  
+    
+     
+    <script>
+        $("#btn1").addClass("activo");
+        $("#contenedor_tabs article").hide();
+        $("#op1").show();
+        $(".menutabs a").click(function(e){
+            e.preventDefault();
+            $(".menutabs a").removeClass("activo");
+            $(this).addClass("activo");
+            $("#contenedor_tabs article").hide();
+            var id = $(this).attr("href");
+            $(id).fadeIn(800);
+        });
+     </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#icono_menu").click(function() {
+                $("#contenedor_menu").toggleClass("abrir_menu");
+            });
+    
+            $(".btn_ancla").click(function() {
+                $("#contenedor_menu").removeClass("abrir_menu");
+            });
+        });
+    </script>
+      <script>
+        $(function() {
+            $(".rslides").responsiveSlides({
+                auto: false,       
+                nav: true,         
+                pager: false,      
+                speed: 500,
+                prevText: "❮",   
+                nextText: "❯"
+            });
+        });
+      </script>
+         <script>
+            new WOW().init();
+        </script>
+        <script>
+            $(document).ready(function() {
+    const modal = $("#modalCita");
+    const modalBg = $("#modal-background");
+
+    
+    modal.hide();
+    modalBg.hide();
+
+  
+    function toggleModal(show) {
+        if (show) {
+            modal.fadeIn();
+            modalBg.fadeIn();
+        } else {
+            modal.fadeOut();
+            modalBg.fadeOut();
+        }
+    }
+
+    
+    $(".btn_slide").on("click", function(event) {
+        event.preventDefault(); 
+        toggleModal(true);
+    });
+
+    
+    $(".cerrar, #modal-background").on("click", function() {
+        toggleModal(false);
+    });
+
+    
+});
+ </script>
+   
+      
+</body>
+</html>
